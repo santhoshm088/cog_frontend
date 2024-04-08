@@ -83,14 +83,14 @@ export default function Question1Screen() {
         <div className="question-description">
           <p>
           
-          Ram is given a set of elements but it is a mix of original and duplicate values. Help Ram to find the original values. Indicate the duplicate values using 0.
+          Ram has been provided with a set of elements containing a mixture of original and duplicate values. Assist Ram in identifying the original values and marking the duplicate values with 0.
 
             <br />
           
           </p>{' '}
         </div>{' '}
         <div className="format">
-          <h3> INPUT: - </h3>{' '}
+          <h3> INPUT FORMAT: - </h3>{' '}
           <p>
           An integer n representing the number of elements.<br></br>
           <p>Next line consists of array elements. </p>
@@ -104,7 +104,7 @@ export default function Question1Screen() {
           
           </p>
           <br />
-          <h3> OUTPUT: - </h3> 
+          <h3> OUTPUT FORMAT: - </h3> 
           <p>      An array containing original values with 0 in place of duplicate values.</p>{' '}
         </div>
         <br />

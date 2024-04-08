@@ -95,7 +95,7 @@ let’s check our colorful masterpiece!<br></br>
           </p>{' '}
         </div>{' '}
         <div className="format">
-          <h3> INPUT: - </h3>{' '}
+          <h3> INPUT FORMAT: - </h3>{' '}
           <p>
           81 elements, in 9 rows and 9 columns like a two dimensional matrix. The '.'(dot) represents the absence of students.
           </p>
@@ -107,14 +107,14 @@ let’s check our colorful masterpiece!<br></br>
 
           </p>
           <br />
-          <h3> OUTPUT: - </h3>
+          <h3> OUTPUT FORMAT: - </h3>
            <p>Boolean value True if all the rules are followed, False if one or more rule is violated.
 </p>{' '}
         </div>
         <br />
         <div className="sample-input">
           <h3> SAMPLE INPUT 1: - </h3> 
-          <p>: 5 3 . . 7 . . . .<br></br>
+       <p>5 3 . . 7 . . . .<br></br>
           6 . . 1 9 5 . . .<br></br>
           . 9 8 . . . . 6 .<br></br>
           8 . . . 6 . . . 3<br></br>

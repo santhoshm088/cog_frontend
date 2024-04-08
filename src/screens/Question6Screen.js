@@ -86,7 +86,7 @@ export default function Question1Screen() {
           </p>{' '}
         </div>{' '}
         <div className="format">
-          <h3> INPUT: - </h3>{' '}
+          <h3> INPUT FORMAT: - </h3>{' '}
           <p>
             The First line of input consists of a string.
             The Second line of input consist of a characterr.
@@ -98,7 +98,7 @@ export default function Question1Screen() {
             0 &lt; strlen(S) &lt; 10<sup>5</sup>
           </p>
           <br />
-          <h3> OUTPUT: - </h3> <p>Print the decoded pin.</p>{' '}
+          <h3> OUTPUT FORMAT: - </h3> <p>Print the decoded pin.</p>{' '}
         </div>
         <br />
         <div className="sample-input">

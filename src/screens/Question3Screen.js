@@ -89,7 +89,7 @@ export default function Question1Screen() {
           </p>{' '}
         </div>{' '}
         <div className="format">
-          <h3> INPUT: - </h3> <p>The input consists of a single line containing the string 's'.</p>
+          <h3> INPUT FORMAT: - </h3> <p>The input consists of a single line containing the string 's'.</p>
           <br />
           <h3> CONSTRAINTS: - </h3>{' '}
           <p>
@@ -97,7 +97,7 @@ export default function Question1Screen() {
             
           </p>
           <br />
-          <h3> OUTPUT: - </h3> <p>Return the string after removing the character.</p>{' '}
+          <h3> OUTPUT FORMAT: - </h3> <p>Return the string after removing the character.</p>{' '}
         </div>
         <br />
         <div className="sample-input">

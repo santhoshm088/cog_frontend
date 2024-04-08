@@ -249,8 +249,8 @@ export default function AdminScreen() {
           <button
             className={
               stage === 7
-                ? 'stage-button btn1 stage-active'
-                : 'stage-button btn1'
+                ? 'stage-button btn7 stage-active'
+                : 'stage-button btn7'
             }
             onClick={() => setStage(7)}
           >

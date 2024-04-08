@@ -83,12 +83,12 @@ export default function Question1Screen() {
         <div className="question-description">
           <p>
                    
-          Sheela built a spiral staircase in her house and represents the steps as elements of a matrix. help her to find the way from ground floor to the first floor
+          Sheela constructed a spiral staircase in her house and represents the steps as elements of a matrix. Assist her in finding the way from the ground floor to the first floor.
 
           </p>{' '}
         </div>{' '}
         <div className="format">
-          <h3> INPUT: - </h3>{' '}
+          <h3> INPUT FORMAT: - </h3>{' '}
           <p>
           First line consists of number of rows and number of columns<br></br>
 		      
@@ -102,7 +102,7 @@ export default function Question1Screen() {
             1 &lt;= m,n &lt;= 10
           </p>
           <br />
-          <h3> OUTPUT: - </h3> 
+          <h3> OUTPUT FORMAT: - </h3> 
           <p>    m x n matrix, return all elements of the matrix in spiral order.</p>{' '}
         </div>
         <br />

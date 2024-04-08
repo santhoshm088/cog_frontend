@@ -32,7 +32,7 @@ export default function Question1Screen() {
   }, []);
   const submitHandler = async (e) => {
     e.preventDefault();
-    if (password === 'programing') {
+    if (password === 'ccuato') {
       try {
         if (!stages.includes(4)) {
           const rollno = userInfo.rollno;
@@ -87,7 +87,7 @@ export default function Question1Screen() {
           </p>{' '}
         </div>{' '}
         <div className="format">
-          <h3> INPUT: - </h3>{' '}
+          <h3> INPUT FORMAT: - </h3>{' '}
           <p>
             Input 1 : A String consists of characters
            
@@ -99,7 +99,7 @@ export default function Question1Screen() {
             0 &lt; S.strlen() &lt; 10 <br />
           </p>
           <br />
-          <h3> OUTPUT: - </h3>
+          <h3> OUTPUT FORMAT: - </h3>
            <p>A output consists of String.</p>{' '}
         </div>
         <br />
@@ -135,7 +135,8 @@ export default function Question1Screen() {
         <div className="box">
           <div className="box-body">
             <div className="input-container">
-            pro**rogrr*aming <br />
+            cal**cul*ator*                    
+ <br />
               <br />
             </div>
             <div className="box-lid">

@@ -100,7 +100,7 @@ export default function Question1Screen() {
             
           </p>
           <br />
-          <h3> OUTPUT: - </h3>{' '}
+          <h3> OUTPUT FORMAT: - </h3>{' '}
           <p>
          An Integer representing a numbers
 
