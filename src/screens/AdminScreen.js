@@ -29,7 +29,7 @@ export default function AdminScreen() {
     const fetchUsers = async () => {
       try {
         dispatch({ type: 'FETCH_REQUEST' });
-        const { data } = await Axios.get('/users/logincount');
+        const { data } = await Axios.get('https://cog-backend-1.onrender.com/users/logincount');
         localStorage.setItem('userLists', JSON.stringify(data));
         ctxDispatch({ type: 'USER_LISTS', payload: data });
         dispatch({ type: 'FETCH_SUCCESS' });
@@ -41,7 +41,7 @@ export default function AdminScreen() {
     const fetchStage1 = async () => {
       try {
         dispatch({ type: 'FETCH_REQUEST' });
-        const { data } = await Axios.get('/stages/stage1count');
+        const { data } = await Axios.get('https://cog-backend-1.onrender.com/stages/stage1count');
         localStorage.setItem('stage1', JSON.stringify(data));
         ctxDispatch({ type: 'STAGE_1', payload: data });
         dispatch({ type: 'FETCH_SUCCESS' });
@@ -53,7 +53,7 @@ export default function AdminScreen() {
     const fetchStage2 = async () => {
       try {
         dispatch({ type: 'FETCH_REQUEST' });
-        const { data } = await Axios.get('/stages/stage2count');
+        const { data } = await Axios.get('https://cog-backend-1.onrender.com/stages/stage2count');
         localStorage.setItem('stage2', JSON.stringify(data));
         ctxDispatch({ type: 'STAGE_2', payload: data });
         dispatch({ type: 'FETCH_SUCCESS' });
@@ -65,7 +65,7 @@ export default function AdminScreen() {
     const fetchStage3 = async () => {
       try {
         dispatch({ type: 'FETCH_REQUEST' });
-        const { data } = await Axios.get('/stages/stage3count');
+        const { data } = await Axios.get('https://cog-backend-1.onrender.com/stages/stage3count');
         localStorage.setItem('stage3', JSON.stringify(data));
         ctxDispatch({ type: 'STAGE_3', payload: data });
         dispatch({ type: 'FETCH_SUCCESS' });
@@ -77,7 +77,7 @@ export default function AdminScreen() {
     const fetchStage4 = async () => {
       try {
         dispatch({ type: 'FETCH_REQUEST' });
-        const { data } = await Axios.get('/stages/stage4count');
+        const { data } = await Axios.get('https://cog-backend-1.onrender.com/stages/stage4count');
         localStorage.setItem('stage4', JSON.stringify(data));
         ctxDispatch({ type: 'STAGE_4', payload: data });
         dispatch({ type: 'FETCH_SUCCESS' });
@@ -89,7 +89,7 @@ export default function AdminScreen() {
     const fetchStage5 = async () => {
       try {
         dispatch({ type: 'FETCH_REQUEST' });
-        const { data } = await Axios.get('/stages/stage5count');
+        const { data } = await Axios.get('https://cog-backend-1.onrender.com/stages/stage5count');
         localStorage.setItem('stage5', JSON.stringify(data));
         ctxDispatch({ type: 'STAGE_5', payload: data });
         dispatch({ type: 'FETCH_SUCCESS' });
@@ -101,7 +101,7 @@ export default function AdminScreen() {
     const fetchStage6 = async () => {
       try {
         dispatch({ type: 'FETCH_REQUEST' });
-        const { data } = await Axios.get('/stages/stage6count');
+        const { data } = await Axios.get('https://cog-backend-1.onrender.com/stages/stage6count');
         localStorage.setItem('stage6', JSON.stringify(data));
         ctxDispatch({ type: 'STAGE_6', payload: data });
         dispatch({ type: 'FETCH_SUCCESS' });
@@ -114,7 +114,7 @@ export default function AdminScreen() {
     const fetchStage7 = async () => {
       try {
         dispatch({ type: 'FETCH_REQUEST' });
-        const { data } = await Axios.get('/stages/stage7count');
+        const { data } = await Axios.get('https://cog-backend-1.onrender.com/stages/stage7count');
         localStorage.setItem('stage7', JSON.stringify(data));
         ctxDispatch({ type: 'STAGE_7', payload: data });
         dispatch({ type: 'FETCH_SUCCESS' });

@@ -39,7 +39,7 @@ export default function SigninScreen() {
     e.preventDefault();
     try {
       dispatch({ type: 'FETCH_REQUEST' });
-      const { data } = await Axios.put('/users/signin', {
+      const { data } = await Axios.put('https://cog-backend-1.onrender.com/users/signin', {
         rollno,
         name,
         email,

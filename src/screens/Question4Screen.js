@@ -40,7 +40,7 @@ export default function Question1Screen() {
           const email = userInfo.email;
           dispatch({ type: 'FETCH_REQUEST' });
           const { data } = await Axios.put(
-            '/stages/stage4',
+            'https://cog-backend-1.onrender.com/stages/stage4',
             {
               rollno,
               name,

@@ -34,7 +34,7 @@ export default function Question1Screen() {
 
   const submitHandler = async (e) => {
     e.preventDefault();
-    if (password === 'ZERO') {
+    if (password === '1 0 6 4 5 0 9 4 1') {
       try {
         if (!stages.includes(1)) {
           const rollno = userInfo.rollno;
@@ -42,7 +42,7 @@ export default function Question1Screen() {
           const email = userInfo.email;
           dispatch({ type: 'FETCH_REQUEST' });
           const { data } = await Axios.put(
-            '/stages/stage1',
+            'https://cog-backend-1.onrender.com/stages/stage1',
             {
               rollno,
               name,
@@ -84,63 +84,52 @@ export default function Question1Screen() {
       <main className="question-container">
         <div className="question-description">
           <p>
-            Pranesh is a UG Scholar. He is given with problem where he has to
-            find the number of characters in a string equivalent to the given
-            ASCII value. The secret key for the next stage is higher case of the
-            result.
+          Ram is given a set of elements but it is a mix of original and duplicate values. Help Ram to find the original values. Indicate the duplicate values using 0.
           </p>{' '}
         </div>{' '}
         <div className="format">
-          <h3> INPUT: - </h3>{' '}
+          <h3> INPUT FORMAT:  - </h3>{' '}
           <p>
-            First line contains the string S.
-            <br />
-            Second line contains an integer N.
+          An integer n representing the number of elements
           </p>
           <br />
           <h3> CONSTRAINTS: - </h3>{' '}
           <p>
             {' '}
-            0 &lt; strlen(S) &lt; 10<sup>5</sup> <br />0 &lt; N &lt; 10
-            <sup>10</sup>{' '}
+            0 &lt; n &lt; 100
+            
           </p>
           <br />
           <h3> OUTPUT: - </h3>{' '}
           <p>
-            Print the number of characters which is equal to the target ASCII.
+          An array containing original values with 0 in place of duplicate values
           </p>{' '}
         </div>
         <br />
         <div className="sample-input">
           <h3> SAMPLE INPUT 1: - </h3>{' '}
           <p>
-            {' '}
-            cse coding club <br />
-            99{' '}
+          11{' '}<br></br>
+          2 2 2 3 3 1 6 7 7 4 9  <br />
+          {' '}
           </p>
           <br />
-          <h3> SAMPLE OUTPUT 1: - </h3> <p> 3 </p>
+          <h3> SAMPLE OUTPUT 1: - </h3> <p>   2 0 0 3 0 1 6 7 0 4 9 </p>
           <br /> <h3> EXPLANATION 1: - </h3>{' '}
-          <p>
-            ASCII value of character 'c' is 99. There are 3 characters 'c' in
-            the given string.
-          </p>{' '}
+         
         </div>
         <br />
         <div className="sample-input">
           <h3> SAMPLE INPUT 2: - </h3>{' '}
           <p>
             {' '}
-            happy learning <br />
-            112{' '}
+            7<br />
+            8 1 2 7 6 3 3{' '}
           </p>
           <br />
-          <h3> SAMPLE OUTPUT 2: - </h3> <p> 2 </p>
+          <h3> SAMPLE OUTPUT 2: - </h3> <p>    8 1 2 7 6 3 0 </p>
           <br /> <h3> EXPLANATION 2: - </h3>{' '}
-          <p>
-            ASCII value of character 'p' is 113. There are 3 characters 'p' in
-            the given string.
-          </p>{' '}
+          
         </div>{' '}
       </main>
       <div className="gift-container">
