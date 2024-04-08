@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e133d8cf.css",
+    "main.js": "/static/js/main.13faa5f7.js",
+    "static/js/453.f7be5b23.chunk.js": "/static/js/453.f7be5b23.chunk.js",
+    "static/media/finish_background.gif": "/static/media/finish_background.26010de5b3825bec61d2.gif",
+    "static/media/ccc_logo.png": "/static/media/ccc_logo.767fed98bf9514930094.png",
+    "static/media/coding.gif": "/static/media/coding.c7f5ca657dfeaa834e63.gif",
+    "static/media/login_back.mp4": "/static/media/login_back.b5b7e480589566d774d1.mp4",
+    "static/media/list_style.gif": "/static/media/list_style.afbc3afd0fb9a08af90d.gif",
+    "index.html": "/index.html",
+    "main.e133d8cf.css.map": "/static/css/main.e133d8cf.css.map",
+    "main.13faa5f7.js.map": "/static/js/main.13faa5f7.js.map",
+    "453.f7be5b23.chunk.js.map": "/static/js/453.f7be5b23.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e133d8cf.css",
+    "static/js/main.13faa5f7.js"
+  ]
+}
