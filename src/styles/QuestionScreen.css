@@ -2,7 +2,7 @@
   height: auto;
   width: 100%;
   margin-top: -2%;
-  background-color: #108bd7;
+  background-image: linear-gradient(rgb(68, 13, 13), rgb(255, 68, 0), rgb(177, 177, 234));
   }
 .question-header {
   width: 80%;
@@ -30,6 +30,11 @@
   border-radius: 1rem;
   line-height: 1.5rem;
   font-size: 1rem;
+}
+
+.question-container p{
+  font-size: x-large;
+  line-height: 3rem;
 }
 
 .question-container p,

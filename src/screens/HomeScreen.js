@@ -22,7 +22,7 @@ export default function HomeScreen() {
 
 <div className='eventname w-100 text-center'>
       
-        <h1>7Z CODERS</h1>
+        <h1>BITWIZARD</h1>
         
       </div>
 

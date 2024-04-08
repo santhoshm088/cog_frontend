@@ -32,7 +32,7 @@ export default function Question1Screen() {
   }, []);
   const submitHandler = async (e) => {
     e.preventDefault();
-    if (password === 'nineThousandNineHundredNinetyNine') {
+    if (password === '1 0 6 4 5 0 9 4 1') {
       try {
         if (!stages.includes(2)) {
           const rollno = userInfo.rollno;
@@ -78,65 +78,69 @@ export default function Question1Screen() {
           </div>
         </div>
       )}
-      <header className="question-header"> Stage 2 </header>{' '}
+      <header className="question-header text-center text-success"> Stage 2 </header>{' '}
       <main className="question-container">
         <div className="question-description">
           <p>
-            Raju,a student weak in maths is doing his maths homework.His
-            homework is to write the alphabet series upto n terms.While doing
-            his father called him.He went and after sometime he starts resuming
-            his work.But atlast,he found that he had missed a number within the
-            range. Help him to find the missing number. The secret key for the
-            next stage is camel case words of the result.
+          
+          Ram is given a set of elements but it is a mix of original and duplicate values. Help Ram to find the original values. Indicate the duplicate values using 0.
+
             <br />
-            <strong>Note:-</strong>
-            <span>Don't consider white spaces in secret key.</span>
+          
           </p>{' '}
         </div>{' '}
         <div className="format">
           <h3> INPUT: - </h3>{' '}
           <p>
-            First line contains the number of elements in the series.
-            <br />
-            Second line contains the N integers of space separated.
+          An integer n representing the number of elements.<br></br>
+          <p>Next line consists of array elements. </p>
+           
           </p>
           <br />
           <h3> CONSTRAINTS: - </h3>{' '}
           <p>
             {' '}
-            0 &lt; N &lt; 10<sup>5</sup> <br />0 &lt; A[i] &lt; 10<sup>10</sup>{' '}
+            0 &lt; n &lt; 100 <br />
+          
           </p>
           <br />
-          <h3> OUTPUT: - </h3> <p>Print the missing number.</p>{' '}
+          <h3> OUTPUT: - </h3> 
+          <p>      An array containing original values with 0 in place of duplicate values.</p>{' '}
         </div>
         <br />
         <div className="sample-input">
           <h3> SAMPLE INPUT 1: - </h3>{' '}
           <p>
-            {' '}
-            5 <br />5 10 7 6 9{' '}
+          11<br></br>
+                     2 2 2 3 3 1 6 7 7 4 9
+
           </p>
           <br />
-          <h3> SAMPLE OUTPUT 1: - </h3> <p> 8 </p>
+          <h3> SAMPLE OUTPUT 1: - </h3> <p>   2 0 0 3 0 1 6 7 0 4 9 </p>
           <br /> <h3> EXPLANATION 1: - </h3>{' '}
-          <p>The missed value in the series is 8.</p>{' '}
+          
         </div>
         <br />
         <div className="sample-input">
-          <h3> SAMPLE INPUT 2: - </h3> <p>7 2 3 5 4 8 7 9</p>
+          <h3> SAMPLE INPUT 2: - </h3>
+          <p>7</p>
+          <br></br>
+          8 1 2 7 6 3 3
+
           <br />
-          <h3> SAMPLE OUTPUT 2: - </h3> <p> 6 </p>
-          <br /> <h3> EXPLANATION 2: - </h3>{' '}
-          <p>The missed value in the series is 6.</p>
+          <h3> SAMPLE OUTPUT 2: - </h3><br></br>
+           <p>  8 1 2 7 6 3 0 </p>
+          
+          
         </div>{' '}
       </main>
       <div className="gift-container">
         <div className="box">
           <div className="box-body">
             <div className="input-container">
-              3
+              <p>9</p>
               <br />
-              9998 10000 10001
+             <p> 1 1 6 4 5 5 9 4 1</p>
             </div>
             <div className="box-lid">
               <div className="box-bowtie"></div>

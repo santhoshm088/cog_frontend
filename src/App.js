@@ -29,7 +29,7 @@ function App() {
   return (
     <BrowserRouter>
       <Helmet>
-        <title>7zcoders</title>
+        <title>BITWIZARD</title>
         <link rel="icon" href={require('../src/assets/ccc_logo.png')} />
       </Helmet>
       <ToastContainer

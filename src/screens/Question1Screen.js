@@ -34,7 +34,7 @@ export default function Question1Screen() {
 
   const submitHandler = async (e) => {
     e.preventDefault();
-    if (password === '1 0 6 4 5 0 9 4 1') {
+    if (password === 'onezeronine') {
       try {
         if (!stages.includes(1)) {
           const rollno = userInfo.rollno;
@@ -80,55 +80,57 @@ export default function Question1Screen() {
           </div>
         </div>
       )}
-      <header className="question-header"> Stage 1 </header>{' '}
+      <header className="question-header text-center text-success"> Stage 1 </header>{' '}
       <main className="question-container">
         <div className="question-description">
-          <p>
-          Ram is given a set of elements but it is a mix of original and duplicate values. Help Ram to find the original values. Indicate the duplicate values using 0.
+          <p className=''>
+          Given that in a certain code, the word "NEWYORK" is represented as "111", can you decipher the code and write a function to convert any given word to its corresponding code?
           </p>{' '}
         </div>{' '}
         <div className="format">
           <h3> INPUT FORMAT:  - </h3>{' '}
           <p>
-          An integer n representing the number of elements
+          A String consists of Uppercase Letters.
           </p>
           <br />
           <h3> CONSTRAINTS: - </h3>{' '}
           <p>
             {' '}
-            0 &lt; n &lt; 100
+            A &lt;= S.CharAt(i) &lt;= Z
             
           </p>
           <br />
           <h3> OUTPUT: - </h3>{' '}
           <p>
-          An array containing original values with 0 in place of duplicate values
+         An Integer representing a numbers
+
           </p>{' '}
         </div>
         <br />
         <div className="sample-input">
           <h3> SAMPLE INPUT 1: - </h3>{' '}
           <p>
-          11{' '}<br></br>
-          2 2 2 3 3 1 6 7 7 4 9  <br />
+          NEWJERSEY<br></br>
+          
           {' '}
           </p>
           <br />
-          <h3> SAMPLE OUTPUT 1: - </h3> <p>   2 0 0 3 0 1 6 7 0 4 9 </p>
-          <br /> <h3> EXPLANATION 1: - </h3>{' '}
+          <h3> SAMPLE OUTPUT 1: - </h3>
+           <p> 124</p>
+          
          
         </div>
         <br />
         <div className="sample-input">
           <h3> SAMPLE INPUT 2: - </h3>{' '}
           <p>
-            {' '}
-            7<br />
-            8 1 2 7 6 3 3{' '}
+          KONGUENGINEERINGCOLLEGE 
+       
           </p>
           <br />
-          <h3> SAMPLE OUTPUT 2: - </h3> <p>    8 1 2 7 6 3 0 </p>
-          <br /> <h3> EXPLANATION 2: - </h3>{' '}
+          <h3> SAMPLE OUTPUT 2: - </h3>
+           <p>  234</p>
+         
           
         </div>{' '}
       </main>
@@ -136,9 +138,8 @@ export default function Question1Screen() {
         <div className="box">
           <div className="box-body">
             <div className="input-container">
-              cognizance
-              <br />
-              98
+            COGNISSANCE 
+             
             </div>
             <div className="box-lid">
               <div className="box-bowtie"></div>
@@ -164,9 +165,7 @@ export default function Question1Screen() {
             Continue{' '}
           </button>{' '}
         </form>{' '}
-        <div className="coding-image-container">
-          <img src={require('../assets/coding.gif')} alt="Coding" />
-        </div>{' '}
+        
       </section>{' '}
       <section className="pagination-button-container">
         <Link to="/" className="previous-button">
