@@ -32,7 +32,7 @@ export default function Question1Screen() {
   }, []);
   const submitHandler = async (e) => {
     e.preventDefault();
-    if (password === 'pInK') {
+    if (password === 'programing') {
       try {
         if (!stages.includes(4)) {
           const rollno = userInfo.rollno;
@@ -78,61 +78,65 @@ export default function Question1Screen() {
           </div>
         </div>
       )}
-      <header className="question-header"> Stage 4 </header>{' '}
+      <header className="question-header text-center text-success"> Stage 4 </header>{' '}
       <main className="question-container">
         <div className="question-description">
           <p>
-            A toddler named Shawan, who wants to study colors so badly since it
-            attracted them. Teach him a few colors that come to your mind. The
-            secret key for the next stage is alternate case words of the result
-            and start with lowercase.
+          While readers peruse a storybook, certain words contain errors, indicated by a star immediately following the mistake. By removing the star and the preceding character, the correct string emerges, aiding readers in enjoying a smoother reading experience.
             <br />
           </p>{' '}
         </div>{' '}
         <div className="format">
           <h3> INPUT: - </h3>{' '}
           <p>
-            Input 1 : A set of colors
-            <br />
-            Input 2 : A string
+            Input 1 : A String consists of characters
+           
           </p>
           <br />
           <h3> CONSTRAINTS: - </h3>{' '}
           <p>
             {' '}
-            0 &lt; strlen(A) &lt; 10 <br />0 &lt; strlen(A[i]) &lt; 10
-            <sup>10</sup>{' '}
+            0 &lt; S.strlen() &lt; 10 <br />
           </p>
           <br />
-          <h3> OUTPUT: - </h3> <p>Print the predicted color.</p>{' '}
+          <h3> OUTPUT: - </h3>
+           <p>A output consists of String.</p>{' '}
         </div>
         <br />
         <div className="sample-input">
           <h3> SAMPLE INPUT 1: - </h3>{' '}
           <p>
             {' '}
-            Blue green red brown purple rose white black brown <br />
-            He wants flowers
+            cogg*nn*issance<br></br>
           </p>
           <br />
-          <h3> SAMPLE OUTPUT 1: - </h3> <p> 8 </p>
-          <br /> <h3> EXPLANATION 1: - </h3>{' '}
-          <p>
-            72+101+119+97+110+116+102+108+111+119+101+114+115=1385
-            <br />
-            1+3+8+5=17
-            <br />
-            1+7=8
-          </p>{' '}
+          <h3> SAMPLE OUTPUT 1: - </h3>
+           <p> cognissance </p>
+          <br /> 
+         
         </div>
+
+        <div className="sample-input">
+          <h3> SAMPLE INPUT 2: - </h3>{' '}
+          <p>
+            {' '}
+            enginn*eering<br></br>
+          </p>
+          <br />
+          <h3> SAMPLE OUTPUT 1: - </h3>
+           <p> engineering </p>
+          <br />
+         
+        </div>
+
         <br />
       </main>
       <div className="gift-container">
         <div className="box">
           <div className="box-body">
             <div className="input-container">
-              green red blue violet brown black pink black violet brown <br />
-              <br />I like coding.
+            pro**rogrr*aming <br />
+              <br />
             </div>
             <div className="box-lid">
               <div className="box-bowtie"></div>
@@ -158,9 +162,7 @@ export default function Question1Screen() {
             Continue{' '}
           </button>{' '}
         </form>{' '}
-        <div className="coding-image-container">
-          <img src={require('../assets/coding.gif')} alt="Coding" />
-        </div>{' '}
+
       </section>{' '}
       <section className="pagination-button-container">
         <Link to="/stage3" className="previous-button">

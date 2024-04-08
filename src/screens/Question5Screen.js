@@ -32,7 +32,7 @@ export default function Question1Screen() {
   }, []);
   const submitHandler = async (e) => {
     e.preventDefault();
-    if (password === '1 1 1 2 0 1 2 0 5 0') {
+    if (password === '[1,2,5,8,0,9,3,4]') {
       try {
         if (!stages.includes(5)) {
           const rollno = userInfo.rollno;
@@ -78,48 +78,63 @@ export default function Question1Screen() {
           </div>
         </div>
       )}
-      <header className="question-header"> Stage 5 </header>{' '}
+      <header className="question-header  text-center text-success"> Stage 5 </header>{' '}
       <main className="question-container">
         <div className="question-description">
           <p>
-            Bob the robber is trying to rob a bank, The Vault is highly secured
-            and ecoded, however Bob outsmarted the security and reached the
-            final security section. The pin for opening the vault is encoded, so
-            help Bob to decode the pin and open the vault. The secret key for
-            the next stage is result.
+                   
+          Sheela built a spiral staircase in her house and represents the steps as elements of a matrix. help her to find the way from ground floor to the first floor
+
           </p>{' '}
         </div>{' '}
         <div className="format">
           <h3> INPUT: - </h3>{' '}
           <p>
-            The input consists of a string mixed with numbers and alphabets.
+          First line consists of number of rows and number of columns<br></br>
+		      
+          Next line consists of matrix elements<br></br>
+
           </p>
           <br />
           <h3> CONSTRAINTS: - </h3>{' '}
           <p>
             {' '}
-            0 &lt; strlen(S) &lt; 10<sup>5</sup>
+            1 &lt;= m,n &lt;= 10
           </p>
           <br />
-          <h3> OUTPUT: - </h3> <p>Print the decoded pin.</p>{' '}
+          <h3> OUTPUT: - </h3> 
+          <p>    m x n matrix, return all elements of the matrix in spiral order.</p>{' '}
         </div>
         <br />
         <div className="sample-input">
-          <h3> SAMPLE INPUT 1: - </h3> <p>a11472o5t6</p>
+          <h3> SAMPLE INPUT 1: - </h3> <p>
+            3 3<br></br>
+            [[1,2,3],[4,5,6],[7,8,9]]
+            </p>
           <br />
-          <h3> SAMPLE OUTPUT 1: - </h3> <p> 0 2 1 0 1 1 1 1 0 0 </p>
+          <h3> SAMPLE OUTPUT 1: - </h3> <p> 
+          [1,2,3,6,9,8,7,4,5]<br></br> 
+            </p>
         </div>
         <br />
         <div className="sample-input">
-          <h3> SAMPLE INPUT 2: - </h3> <p>lw4n88j12n1</p>
+          <h3> SAMPLE INPUT 2: - </h3> <p>
+          4 4 <br></br>
+          [[1,2,3,4],[5,6,7,8],[9,10,11,12]]
+          </p>
           <br />
-          <h3> SAMPLE OUTPUT 2: - </h3> <p> 0 2 1 0 1 0 0 0 2 0 </p>
+          <h3> SAMPLE OUTPUT 2: - </h3> <p> [1,2,3,4,8,12,11,10,9,5,6,7] </p>
         </div>{' '}
       </main>
       <div className="gift-container">
         <div className="box">
           <div className="box-body">
-            <div className="input-container">1v88886l256338ar0ekk</div>
+            <div className="input-container">
+             <p>
+              4 2<br></br>
+              [[1,2],[4,5],[3,8],[9,0]]
+             </p>
+              </div>
             <div className="box-lid">
               <div className="box-bowtie"></div>
             </div>
@@ -144,9 +159,7 @@ export default function Question1Screen() {
             Continue{' '}
           </button>{' '}
         </form>{' '}
-        <div className="coding-image-container">
-          <img src={require('../assets/coding.gif')} alt="Coding" />
-        </div>{' '}
+       
       </section>{' '}
       <section className="pagination-button-container">
         <Link to="/stage4" className="previous-button">

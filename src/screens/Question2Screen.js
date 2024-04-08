@@ -124,8 +124,8 @@ export default function Question1Screen() {
         <div className="sample-input">
           <h3> SAMPLE INPUT 2: - </h3>
           <p>7</p>
-          <br></br>
-          8 1 2 7 6 3 3
+          
+         <p>8 1 2 7 6 3 3</p> 
 
           <br />
           <h3> SAMPLE OUTPUT 2: - </h3><br></br>
@@ -138,9 +138,9 @@ export default function Question1Screen() {
         <div className="box">
           <div className="box-body">
             <div className="input-container">
-              <p>9</p>
-              <br />
-             <p> 1 1 6 4 5 5 9 4 1</p>
+              <p>9<br></br>
+             
+             1 1 6 4 5 5 9 4 1</p>
             </div>
             <div className="box-lid">
               <div className="box-bowtie"></div>
@@ -166,9 +166,7 @@ export default function Question1Screen() {
             Continue{' '}
           </button>{' '}
         </form>{' '}
-        <div className="coding-image-container">
-          <img src={require('../assets/coding.gif')} alt="Coding" />
-        </div>{' '}
+       
       </section>{' '}
       <section className="pagination-button-container">
         <Link to="/stage1" className="previous-button">

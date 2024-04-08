@@ -34,7 +34,7 @@ export default function Question1Screen() {
 
   const submitHandler = async (e) => {
     e.preventDefault();
-    if (password === 'onezeronine') {
+    if (password === '109') {
       try {
         if (!stages.includes(1)) {
           const rollno = userInfo.rollno;

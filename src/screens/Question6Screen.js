@@ -32,7 +32,7 @@ export default function Question1Screen() {
   }, []);
   const submitHandler = async (e) => {
     e.preventDefault();
-    if (password === '1 1 1 2 0 1 2 0 5 0') {
+    if (password === 'retnpong') {
       try {
         if (!stages.includes(6)) {
           const rollno = userInfo.rollno;
@@ -54,7 +54,7 @@ export default function Question1Screen() {
           dispatch({ type: 'FETCH_SUCCESS' });
           navigate('/stage7');
         } else {
-          navigate('/stage1');
+          navigate('/stage7');
         }
       } catch (err) {
         dispatch({ type: 'FETCH_FAILED' });
@@ -78,21 +78,18 @@ export default function Question1Screen() {
           </div>
         </div>
       )}
-      <header className="question-header"> Stage 6 </header>{' '}
+      <header className="question-header  text-center text-success"> Stage 6 </header>{' '}
       <main className="question-container">
         <div className="question-description">
           <p>
-            Bob the robber is trying to rob a bank, The Vault is highly secured
-            and ecoded, however Bob outsmarted the security and reached the
-            final security section. The pin for opening the vault is encoded, so
-            help Bob to decode the pin and open the vault. The secret key for
-            the next stage is result.
+          Sonu's laptop keyboard starts to malfunction, where pressing a specific key doesn't print the intended character. Instead, it reverses all characters entered before it. Determine the final result that Sonu gets after typing on his laptop.
           </p>{' '}
         </div>{' '}
         <div className="format">
           <h3> INPUT: - </h3>{' '}
           <p>
-            The input consists of a string mixed with numbers and alphabets.
+            The First line of input consists of a string.
+            The Second line of input consist of a characterr.
           </p>
           <br />
           <h3> CONSTRAINTS: - </h3>{' '}
@@ -105,21 +102,25 @@ export default function Question1Screen() {
         </div>
         <br />
         <div className="sample-input">
-          <h3> SAMPLE INPUT 1: - </h3> <p>a11472o5t6</p>
+          <h3> SAMPLE INPUT 1: - </h3> <p>cognissance</p><br></br>
+          <p>n</p>
           <br />
-          <h3> SAMPLE OUTPUT 1: - </h3> <p> 0 2 1 0 1 1 1 1 0 0 </p>
+          <h3> SAMPLE OUTPUT 1: - </h3> <p> assicogce </p>
         </div>
         <br />
         <div className="sample-input">
-          <h3> SAMPLE INPUT 2: - </h3> <p>lw4n88j12n1</p>
+          <h3> SAMPLE INPUT 2: - </h3> <p>programming</p>
           <br />
-          <h3> SAMPLE OUTPUT 2: - </h3> <p> 0 2 1 0 1 0 0 0 2 0 </p>
+          <h3> SAMPLE OUTPUT 2: - </h3> <p>m </p>
         </div>{' '}
       </main>
       <div className="gift-container">
         <div className="box">
           <div className="box-body">
-            <div className="input-container">1v88886l256338ar0ekk</div>
+            <div className="input-container">
+              <p>pointering
+            <br></br>
+            i</p></div>
             <div className="box-lid">
               <div className="box-bowtie"></div>
             </div>
@@ -144,9 +145,7 @@ export default function Question1Screen() {
             Continue{' '}
           </button>{' '}
         </form>{' '}
-        <div className="coding-image-container">
-          <img src={require('../assets/coding.gif')} alt="Coding" />
-        </div>{' '}
+        
       </section>{' '}
       <section className="pagination-button-container">
         <Link to="/stage5" className="previous-button">

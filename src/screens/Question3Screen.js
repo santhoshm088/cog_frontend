@@ -33,7 +33,7 @@ export default function Question1Screen() {
 
   const submitHandler = async (e) => {
     e.preventDefault();
-    if (password === "'225''229''110''109'") {
+    if (password === "madam") {
       try {
         if (!stages.includes(3)) {
           const rollno = userInfo.rollno;
@@ -79,74 +79,46 @@ export default function Question1Screen() {
           </div>
         </div>
       )}
-      <header className="question-header"> Stage 3 </header>{' '}
+      <header className="question-header text-center text-success"> Stage 3 </header>{' '}
       <main className="question-container">
         <div className="question-description">
           <p>
-            Raja has a 10 days holidays for his semester, while he was alone in
-            home, he gets bored. He wants to play a game with his friend Ragu.
-            He has two arrays of characters. His task is to add the respective
-            characters. He need reverse the first script and perform operation.
-            Help him to add those characters. The secret key for the next stage
-            is result and each value is enclosed within single quotes.
+          Albert Einstein handed a string to his students, asking them to make it same from both ends while allowing them to remove at most one character. Now, assist the students by providing a code for the same.
             <br />
-            <strong>Note:-</strong>
-            <span>Don't consider white spaces in secret key.</span>
+
           </p>{' '}
         </div>{' '}
         <div className="format">
-          <h3> INPUT: - </h3> <p>First line contains the 2D array.</p>
+          <h3> INPUT: - </h3> <p>The input consists of a single line containing the string 's'.</p>
           <br />
           <h3> CONSTRAINTS: - </h3>{' '}
           <p>
-            Array contains lowercase alphabets.
-            <br /> 0 &lt; strlen(A[i]) &lt; 10
-            <sup>5</sup> <br />0 &lt; strlen(A) &lt; 2{' '}
+          1 &lt;= s.length &lt;= 10^5
+            
           </p>
           <br />
-          <h3> OUTPUT: - </h3> <p>Print the resultant array.</p>{' '}
+          <h3> OUTPUT: - </h3> <p>Return the string after removing the character.</p>{' '}
         </div>
         <br />
         <div className="sample-input">
-          <h3> SAMPLE INPUT 1: - </h3> <p>[ [‘a’,’b’,’c’],[‘d’,’e’,’f’] ]</p>
+          <h3> SAMPLE INPUT 1: - </h3> <p> helpeh</p>
           <br />
-          <h3> SAMPLE OUTPUT 1: - </h3> <p> [201,199,197]</p>
-          <br /> <h3> EXPLANATION 1: - </h3>{' '}
-          <p>
-            Reversing the first subscript [c , b , a]
-            <br />
-            Reversing the second subscript [ f, e, d]
-            <br />
-            Adding - ASCII values of c and f - 201 , b and e – 199 , d and a
-            -197
-            <br />
-            Res = [201, 199 , 197]
-            <br />
-          </p>{' '}
+          <h3> SAMPLE OUTPUT 1: - </h3> <p>hepeh</p>
+          <br /> 
         </div>
         <br />
         <div className="sample-input">
-          <h3> SAMPLE INPUT 2: - </h3> <p>[ [‘x’,’y’,’z’],[‘p’,’q’,’r’] ]</p>
+          <h3> SAMPLE INPUT 2: - </h3> <p>biabbab</p>
           <br />
-          <h3> SAMPLE OUTPUT 2: - </h3> <p> [234,234,234] </p>
-          <br /> <h3> EXPLANATION 2: - </h3>{' '}
-          <p>
-            Reversing the first subscript [z , y , x]
-            <br />
-            Reversing the second subscript [ p, q, r]
-            <br />
-            Adding - ASCII values of z and p - 234 , y and q – 234 , x and r
-            -234
-            <br />
-            Res = [234, 234 , 234]
-            <br />
-          </p>
+          <h3> SAMPLE OUTPUT 2: - </h3> <p> babbab </p>
+          <br /> 
+          
         </div>{' '}
       </main>
       <div className="gift-container">
         <div className="box">
           <div className="box-body">
-            <div className="input-container">[['m','n','r','q'],['p','s']]</div>
+            <div className="input-container">amadam</div>
             <div className="box-lid">
               <div className="box-bowtie"></div>
             </div>
@@ -171,9 +143,7 @@ export default function Question1Screen() {
             Continue{' '}
           </button>{' '}
         </form>{' '}
-        <div className="coding-image-container">
-          <img src={require('../assets/coding.gif')} alt="Coding" />
-        </div>{' '}
+        
       </section>{' '}
       <section className="pagination-button-container">
         <Link to="/stage2" className="previous-button">

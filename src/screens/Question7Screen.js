@@ -32,7 +32,7 @@ export default function Question1Screen() {
   }, []);
   const submitHandler = async (e) => {
     e.preventDefault();
-    if (password === '1 1 1 2 0 1 2 0 5 0') {
+    if (password === 'true') {
       try {
         if (!stages.includes(7)) {
           const rollno = userInfo.rollno;
@@ -78,48 +78,97 @@ export default function Question1Screen() {
           </div>
         </div>
       )}
-      <header className="question-header"> Stage 7 </header>{' '}
+      <header className="question-header  text-center text-success"> Stage 7 </header>{' '}
       <main className="question-container">
         <div className="question-description">
           <p>
-            Bob the robber is trying to rob a bank, The Vault is highly secured
-            and ecoded, however Bob outsmarted the security and reached the
-            final security section. The pin for opening the vault is encoded, so
-            help Bob to decode the pin and open the vault. The secret key for
-            the next stage is result.
+          Let’s dive into the colorful world of the ABC School’s march-past event. Imagine a grand parade ground with 9 rows and 9 columns, just like a giant Sudoku board.Zoom in further, Divide the entire parade ground into 9 smaller groups, each group has 3*3 students, 
+          so entire parade is divided as 9(3*3) groups.9 colours of dresses were given to student in the manner, each student one colour. On the sports day, some of the participants where absent, so it is planned to leave space for the absenties. <br></br>
+There are more constraints presented by principal for the way in which students should be arranged in the march-past parade, they are <br></br>
+* In a row, there should not be students with same colour.<br></br>
+* In a column, there should not be students with same colour.<br></br>
+* In a each 3x3 group, there should not be students with same colour.<br></br>
+It was instructed to students to follow these rules, but some didn't follow the rules because they wanted to be with friend.<br></br>
+Imagine you are the event coordinator for march-past event and check whether the rule is followed are not.(Imagine 9 colours as numbers from 0-9)<br></br>
+let’s check our colorful masterpiece!<br></br>
+
           </p>{' '}
         </div>{' '}
         <div className="format">
           <h3> INPUT: - </h3>{' '}
           <p>
-            The input consists of a string mixed with numbers and alphabets.
+          81 elements, in 9 rows and 9 columns like a two dimensional matrix. The '.'(dot) represents the absence of students.
           </p>
           <br />
           <h3> CONSTRAINTS: - </h3>{' '}
           <p>
             {' '}
-            0 &lt; strlen(S) &lt; 10<sup>5</sup>
+            elements[i][j] is a digit 0-9 or '.' only.
+
           </p>
           <br />
-          <h3> OUTPUT: - </h3> <p>Print the decoded pin.</p>{' '}
+          <h3> OUTPUT: - </h3>
+           <p>Boolean value True if all the rules are followed, False if one or more rule is violated.
+</p>{' '}
         </div>
         <br />
         <div className="sample-input">
-          <h3> SAMPLE INPUT 1: - </h3> <p>a11472o5t6</p>
+          <h3> SAMPLE INPUT 1: - </h3> 
+          <p>: 5 3 . . 7 . . . .<br></br>
+          6 . . 1 9 5 . . .<br></br>
+          . 9 8 . . . . 6 .<br></br>
+          8 . . . 6 . . . 3<br></br>
+          4 . . 8 . 3 . . 1<br></br>
+          7 . . . 2 . . . 6<br></br>
+          . 6 . . . . 2 8 .<br></br>
+          . . . 4 1 9 . . 5<br></br>
+          . . . . 8 . . 7 9<br></br>
+
+</p>
           <br />
-          <h3> SAMPLE OUTPUT 1: - </h3> <p> 0 2 1 0 1 1 1 1 0 0 </p>
+          <h3> SAMPLE OUTPUT 1: - </h3> 
+          <p>true</p>
         </div>
         <br />
         <div className="sample-input">
-          <h3> SAMPLE INPUT 2: - </h3> <p>lw4n88j12n1</p>
+          <h3> SAMPLE INPUT 2: - </h3>
+           <p>8 3 . . 7 . . . .<br></br>
+              6 . . 1 9 5 . . .<br></br>
+              . 9 8 . . . . 6 .<br></br>
+              8 . . . 6 . . . 3<br></br>
+              4 . . 8 . 3 . . 1<br></br>
+              7 . . . 2 . . . 6<br></br>
+              . 6 . . . . 2 8 .<br></br>
+              . . . 4 1 9 . . 5<br></br>
+              . . . . 8 . . 7 9<br></br>
+
+
+
+
+
+           </p>
           <br />
-          <h3> SAMPLE OUTPUT 2: - </h3> <p> 0 2 1 0 1 0 0 0 2 0 </p>
+          <h3> SAMPLE OUTPUT 2: - </h3>
+           <p>  false </p>
         </div>{' '}
       </main>
       <div className="gift-container">
         <div className="box">
           <div className="box-body">
-            <div className="input-container">1v88886l256338ar0ekk</div>
+            <div className="input-container">
+         . . 4 6 . 8 9 1 2<br></br>
+		     . 7 2 . . . 3 4 8<br></br>
+		     1 . . 3 4 2 5 . 7<br></br>
+		     . 5 9 7 . 1 4 2 .<br></br>
+		     . 2 6 . 5 . 7 9 .<br></br>
+		     . 1 3 9 . 4 8 5 .<br></br>
+		     9 . 1 5 3 7 . . 4<br></br>
+		     2 8 7 . . . 6 3 .<br></br>
+		     3 4 5 2 . 6 1 . .<br></br>
+
+              
+              
+              </div>
             <div className="box-lid">
               <div className="box-bowtie"></div>
             </div>
@@ -144,9 +193,7 @@ export default function Question1Screen() {
             Continue{' '}
           </button>{' '}
         </form>{' '}
-        <div className="coding-image-container">
-          <img src={require('../assets/coding.gif')} alt="Coding" />
-        </div>{' '}
+        
       </section>{' '}
       <section className="pagination-button-container">
         <Link to="/stage6" className="previous-button">
