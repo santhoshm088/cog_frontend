@@ -1,0 +1,83 @@
+.admin-page {
+  height: 90vh;
+  width: 100%;
+}
+
+.admin-header {
+  width: 90%;
+  margin: 3% auto;
+  padding-left: 3%;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #000000;
+  border-bottom: 2px solid #00a2ff;
+}
+
+.stage-button-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stage-button {
+  padding: 1% 4%;
+  color: #000000;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 1px solid grey;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.stage-active {
+  background-color: #00a2ff;
+  color: #ffffff;
+}
+
+.btn0 {
+  border-radius: 10px 0 0 10px;
+}
+
+.btn5 {
+  border-radius: 0 10px 10px 0;
+}
+
+.stage-table-container {
+  height: 65vh;
+  width: 75%;
+  margin: 3% auto;
+  overflow: scroll;
+}
+
+.stage-table {
+  width: 98%;
+  border: 1px solid #dbdbdb;
+  border-collapse: collapse;
+}
+
+.stage-table th,
+.stage-table td {
+  padding: 1% 2%;
+  text-align: center;
+  border: 1px solid #dbdbdb;
+}
+
+.loading-box {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 450px) {
+  .stage-button-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .stage-table th {
+    padding: 2% 4%;
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.95edb6e4.css",
+    "main.js": "/static/js/main.60c36b24.js",
+    "static/js/787.22edae46.chunk.js": "/static/js/787.22edae46.chunk.js",
+    "static/media/finish_background.gif": "/static/media/finish_background.26010de5b3825bec61d2.gif",
+    "static/media/ccc_logo.png": "/static/media/ccc_logo.767fed98bf9514930094.png",
+    "static/media/coding.gif": "/static/media/coding.c7f5ca657dfeaa834e63.gif",
+    "static/media/home_background.gif": "/static/media/home_background.d12134af1b1334600669.gif",
+    "static/media/register_background.gif": "/static/media/register_background.64bde2b1d396f77ca448.gif",
+    "static/media/background.png": "/static/media/background.d7d0998a6a99e77e84a8.png",
+    "static/media/list_style.gif": "/static/media/list_style.afbc3afd0fb9a08af90d.gif",
+    "index.html": "/index.html",
+    "main.95edb6e4.css.map": "/static/css/main.95edb6e4.css.map",
+    "main.60c36b24.js.map": "/static/js/main.60c36b24.js.map",
+    "787.22edae46.chunk.js.map": "/static/js/787.22edae46.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.95edb6e4.css",
+    "static/js/main.60c36b24.js"
+  ]
+}

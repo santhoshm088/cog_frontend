@@ -1,0 +1,116 @@
+
+
+.black-overlay1 {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  opacity: 0.8;
+}
+
+.guidelines {
+  
+  z-index: 0;
+  color: #ffffff;
+}
+
+.loader {
+
+
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.loader h1 {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 5rem;
+  color: #ffffff5f;
+  background-image: url(https://image.ibb.co/ciSeac/image.png);
+  background-repeat: repeat-x;
+  -webkit-background-clip: text;
+  animation: flow 15s linear infinite;
+}
+
+@keyframes flow {
+  0% {
+    background-position: left 0px top 80px;
+  }
+  40% {
+    background-position: left 800px top -50px;
+  }
+  80% {
+    background-position: left 1800px top -80px;
+  }
+  100% {
+    background-position: left 2400px top 80px;
+  }
+}
+
+
+
+
+.guideline-points {
+  width: 80%;
+
+  list-style: none;
+}
+
+.guideline-points li {
+  padding-left: 8%;
+  background: url('../assets/list_style.gif');
+  background-repeat: no-repeat;
+  background-size: 3rem;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+
+.body{
+  min-height: 100vh;
+
+}
+
+.top{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+ 
+}
+
+div div .ins{
+  border: none;
+  text-align: center;
+  background-color: rgb(204, 247, 248);
+  box-shadow : 0 0 5px cyan,0 0 25px cyan;
+  color: rgb(236, 133, 117);
+
+}
+
+@media screen and (max-width: 450px) {
+  .guidelines-container {
+    height: 150vh;
+  }
+  .black-overlay1 {
+    height: 150vh;
+  }
+  .loader {
+    width: 100%;
+    top: 5%;
+    left: 55%;
+  }
+  .loader h1 {
+    font-size: 2.5rem;
+  }
+  .guideline-points {
+    margin-top: 30%;
+  }
+  .guideline-points li {
+    padding-left: 20%;
+  }
+}
