@@ -96,7 +96,7 @@ export default function Question1Screen() {
           <h3> CONSTRAINTS: - </h3>{' '}
           <p>
             {' '}
-            0 &lt; S.strlen() &lt; 10 <br />
+            0 &lt; S.strlen() &lt; 100 <br />
           </p>
           <br />
           <h3> OUTPUT FORMAT: - </h3>

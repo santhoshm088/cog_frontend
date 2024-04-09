@@ -88,7 +88,9 @@ export default function Question1Screen() {
         <div className="format">
           <h3> INPUT FORMAT: - </h3>{' '}
           <p>
-            The First line of input consists of a string.
+            The First line of input consists of a string.<br></br>
+
+            
             The Second line of input consist of a characterr.
           </p>
           <br />
@@ -102,7 +104,7 @@ export default function Question1Screen() {
         </div>
         <br />
         <div className="sample-input">
-          <h3> SAMPLE INPUT 1: - </h3> <p>cognissance</p><br></br>
+          <h3> SAMPLE INPUT 1: - </h3> <p>cognissance</p>
           <p>n</p>
           <br />
           <h3> SAMPLE OUTPUT 1: - </h3> <p> assicogce </p>
@@ -110,8 +112,10 @@ export default function Question1Screen() {
         <br />
         <div className="sample-input">
           <h3> SAMPLE INPUT 2: - </h3> <p>programming</p>
+          <p>m</p>
           <br />
-          <h3> SAMPLE OUTPUT 2: - </h3> <p>m </p>
+          <h3> SAMPLE OUTPUT 2: - </h3>
+          <p>prograing</p>
         </div>{' '}
       </main>
       <div className="gift-container">

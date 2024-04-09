@@ -117,7 +117,7 @@ export default function Question1Screen() {
           </p>
           <br />
           <h3> SAMPLE OUTPUT 1: - </h3> <p>   2 0 0 3 0 1 6 7 0 4 9 </p>
-          <br /> <h3> EXPLANATION 1: - </h3>{' '}
+          <br />
           
         </div>
         <br />
